@@ -9,7 +9,7 @@ function PrivateRoute({ children, redirectTo }) {
   if (loading) {
     return <h1>Loading...</h1>;
   }
-  
+  console.log(authenticated);
   return authenticated ? children : <Navigate to={redirectTo} />;
 }
 

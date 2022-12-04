@@ -22,7 +22,7 @@ export default function useAuth() {
   }, []);
   
   async function handleLogin(formData) {
-    const tokenReceived = await api.post('/auth/login', {
+    const tokenReceived = await api.post('/login', {
         email: formData.email, 
         password: formData.password
       }
@@ -33,14 +33,14 @@ export default function useAuth() {
     localStorage.setItem('token', tokenReceived);
     api.defaults.headers.Authorization = `Bearer ${tokenReceived}`;
     setAuthenticated(true);
-    history.push('/classes');
+    history.push('/user');
   }
 
   function handleLogout() {
     setAuthenticated(false);
     localStorage.removeItem('token');
     api.defaults.headers.Authorization = undefined;
-    history.push('/login');
+    history.push('/');
   }
   
   return { authenticated, loading, handleLogin, handleLogout };
