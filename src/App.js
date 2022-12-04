@@ -1,20 +1,20 @@
-import Card from './components/Card';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import history from './history';
+
+import { AuthProvider } from './components/Context/AuthContext';
+import Home from './pages/Home'; 
 
 import './App.css';
 
-
 function App() {
   return (
-    <main>
-      <button className='login'><span>Login</span></button>
-      <div className='deck'>
-        <Card tool={'Tool'} />
-        <Card tool={'Tool'} />
-        <Card tool={'Tool'} />
-        <Card tool={'Tool'} />
-        <Card tool={'Tool'} />
-      </div>
-    </main>
+    <AuthProvider>
+      <BrowserRouter history={history}>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+    </AuthProvider>
   );
 }
 
