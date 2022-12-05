@@ -6,6 +6,7 @@ import PrivateRoute from './components/PrivateRoute';
 
 import Home from './pages/Home'; 
 import User from './pages/user';
+import AddPlayer from './pages/add-player';
 
 import './App.css';
 
@@ -19,7 +20,12 @@ function App() {
             <PrivateRoute redirectTo="/">
               <User />
             </PrivateRoute>
-          }/> 
+          }/>
+          <Route path="/add-player" element={
+            <PrivateRoute redirectTo="/">
+              <AddPlayer />
+            </PrivateRoute>
+          }/>
         </Routes>
       </BrowserRouter>
     </AuthProvider>

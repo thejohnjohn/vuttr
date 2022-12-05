@@ -9,17 +9,18 @@ const Login = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const { handleLogin } = useContext(Context);
   
-  const onSubmit = data => console.log(data.email);
+  const onSubmit = (data) => {
+    handleLogin(data);
+  };
 
   return (
-    <form className='form' onSubmit={handleSubmit(handleLogin)}>
+    <form className='form' onSubmit={handleSubmit(onSubmit)}>
       <input className='input-form' 
         type='email' placeholder='email' {...register('email', {})} />
       <input className='input-form'
         type='password' placeholder='password' {...register('password', {})} />
 
       <input className='login'
-        onClick={(data) => { handleLogin(data) }}
         type='submit' value='Login' />
     </form>
   );

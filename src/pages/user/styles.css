@@ -16,11 +16,53 @@ main {
   text-shadow: 2px 2px 0px #000000, 0px 0px 2px #000000;
 }
 
-.deck {
+#add-button {
+  align-self: flex-start;
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  background-color: #9059FF;
+  border: 1px solid #000000;
+  box-shadow: 2px 2px 0px #000000;
+
+  color: white;
+  font-weight: bold;
+  font-size: 45px;
+  color: #FFFFFF;
+  text-align: center;
+  text-shadow: 2px 2px 0px #000000, 0px 0px 2px #000000;
+}
+
+.deck-user {
   width: inherit;
   display: grid;
   grid-template-columns: repeat(2, 40%);
-  grid-auto-rows: 160px;
+  grid-auto-rows: 190px;
   grid-gap: 20%;
 }
 
+.tool-space {
+  display: flex;
+  flex-direction: column;
+}
+
+.tool-space > .tool-card {
+  height: 160px;
+}
+
+#delete-tool {
+  position: relative;
+  top: 15px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  align-self: flex-end;
+  border-radius: 5px;
+  background-color: #ff3333;
+  border: 1px solid #000000;
+  box-shadow: 2px 2px 0px #000000;
+
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
