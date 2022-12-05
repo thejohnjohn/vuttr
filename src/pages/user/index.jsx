@@ -29,7 +29,7 @@ function User() {
   return (
     <main>
       <span className='user'>Hi, {'User'}</span>
-      <button id="add-button" onClick={() => { history.push('/add-player'); history.go('/add-player'); }}>+</button>
+      <button id="add-button" onClick={() => { history.push('/add-tool'); history.go('/add-player'); }}>+</button>
       <div className='deck-user'>
         {
           deck.length !== 0 

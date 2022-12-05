@@ -1,0 +1,54 @@
+.delete-panel, #cancel, #confirm {
+  border: 1px solid #000000;
+  box-shadow: 5px 5px 0px #000000;
+  border-radius: 10px;
+  text-shadow: 2px 2px 0px #000000, 0px 0px 2px #000000;
+}
+
+.delete-panel, .button-container {
+  display: flex;
+}
+
+#cancel, #confirm, #delete-panel-title {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+#cancel, #confirm {
+  height: 65px;
+  width: 45%;
+}
+
+.delete-panel {
+  width: 90%;
+  height: 150px;
+  margin-left: 5%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #9059FF;
+}
+
+.button-container {
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  background-color: inherit;
+}
+
+#delete-panel-title {
+  margin-bottom: 1.5rem;
+}
+
+#cancel {
+  background-color: #FFF766;
+}
+
+#confirm {
+  background-color: #ff3333;
+}

@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 
 import './styles.css';
 
-const AddPlayer = () => {
+const ToolDetail = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
   
   const onSubmit = (data) => {
@@ -26,4 +26,4 @@ const AddPlayer = () => {
   );
 }
 
-export default AddPlayer;
+export default ToolDetail;

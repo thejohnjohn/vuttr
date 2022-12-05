@@ -6,7 +6,9 @@ import PrivateRoute from './components/PrivateRoute';
 
 import Home from './pages/Home'; 
 import User from './pages/user';
-import AddPlayer from './pages/add-player';
+import AddTool from './pages/add-tool';
+import DeleteTool from './pages/delete-tool';
+import ToolDetail from './pages/tool-detail';
 
 import './App.css';
 
@@ -21,9 +23,19 @@ function App() {
               <User />
             </PrivateRoute>
           }/>
-          <Route path="/add-player" element={
+          <Route path="/add-tool" element={
             <PrivateRoute redirectTo="/">
-              <AddPlayer />
+              <AddTool />
+            </PrivateRoute>
+          }/>
+          <Route path="/delete-tool" element={
+            <PrivateRoute redirectTo="/">
+              <DeleteTool />
+            </PrivateRoute>
+          }/>
+          <Route path="/tool-detail" element={
+            <PrivateRoute redirectTo="/">
+              <ToolDetail />
             </PrivateRoute>
           }/>
         </Routes>
