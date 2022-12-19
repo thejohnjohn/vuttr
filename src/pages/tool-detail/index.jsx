@@ -11,17 +11,17 @@ const ToolDetail = () => {
   };
 
   return (
-    <form className='form' onSubmit={handleSubmit(onSubmit)}>
-      <input className='input-form' 
+    <form className='detail-form' onSubmit={handleSubmit(onSubmit)}>
+      <input className='input-form on-off-input' 
         type='text' placeholder='title' {...register('title', {})} />
-      <input className='input-form' 
+      <input className='input-form on-off-input' 
         type='text' placeholder='link' {...register('link', {})} />
-      <input className='input-form' 
+      <input className='input-form on-off-input' 
         type='text' placeholder='description' {...register('description', {})} />
-      <input className='input-form' 
+      <input className='input-form on-off-input' 
         type='text' placeholder='tags' {...register('tags', {})} />
       <input className='login'
-        type='submit' value='AddPlayer' />
+        type='submit' value='Ok' />
     </form>
   );
 }

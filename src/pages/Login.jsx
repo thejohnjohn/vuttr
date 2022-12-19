@@ -14,7 +14,7 @@ const Login = () => {
   };
 
   return (
-    <form className='form' onSubmit={handleSubmit(onSubmit)}>
+    <form className='login-form' onSubmit={handleSubmit(onSubmit)}>
       <input className='input-form' 
         type='email' placeholder='email' {...register('email', {})} />
       <input className='input-form'

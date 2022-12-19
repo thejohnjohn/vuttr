@@ -7,7 +7,7 @@ const api = axios.create({
 });
 
 export default function useAuth() {
-  const [authenticated, setAuthenticated] = useState(false);
+  const [authenticated, setAuthenticated] = useState(false); 
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
