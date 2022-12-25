@@ -11,11 +11,13 @@ const DeleteTool = () => {
   };
 
   return (
-    <div className='delete-panel'>
-      <span id='delete-panel-title'>Are you sure?</span>
-      <div className='button-container'>
-        <button id='cancel' >Cancel</button>
-        <button id='confirm' >Confirm</button>
+    <div id='delete-panel'>
+      <div className='delete-panel'>
+        <span id='delete-panel-title'>Are you sure?</span>
+        <div className='button-container'>
+          <button id='cancel' >Cancel</button>
+          <button id='confirm' >Confirm</button>
+        </div>
       </div>
     </div>
   );

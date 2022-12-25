@@ -21,7 +21,7 @@ const AddTool = () => {
       <input className='input-form' 
         type='text' placeholder='tags' {...register('tags', {})} />
       <input className='login'
-        type='submit' value='AddPlayer' />
+        type='submit' value='Add tool' />
     </form>
   );
 }

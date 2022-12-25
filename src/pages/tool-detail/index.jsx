@@ -12,13 +12,13 @@ const ToolDetail = () => {
 
   return (
     <form className='detail-form' onSubmit={handleSubmit(onSubmit)}>
-      <input className='input-form on-off-input' 
+      <input className='input-detail on-off-input' 
         type='text' placeholder='title' {...register('title', {})} />
-      <input className='input-form on-off-input' 
+      <input className='input-detail on-off-input' 
         type='text' placeholder='link' {...register('link', {})} />
-      <input className='input-form on-off-input' 
+      <input className='input-detail on-off-input' 
         type='text' placeholder='description' {...register('description', {})} />
-      <input className='input-form on-off-input' 
+      <input className='input-detail on-off-input' 
         type='text' placeholder='tags' {...register('tags', {})} />
       <input className='login'
         type='submit' value='Ok' />
